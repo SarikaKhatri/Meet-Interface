@@ -1,0 +1,339 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",arial,sans-serif;
+}
+body{
+    margin: 16px;
+    margin-bottom: 12px;
+    background-color: rgb(32,33,36);
+}
+/* main section */
+main{
+    height: 80vh;
+    width: 70%;
+    position: relative;
+}
+/* header section */
+header{
+    position: absolute;
+    width: 100%;
+}
+.inline-display
+{
+    display: inline-block;
+}
+/* recording section */
+#record
+{
+    width: 15%;
+    height: 6vh;
+    background-color: rgba(237, 55, 5, 0.916);
+    text-align: center;
+    border-radius: 8px;
+    padding:2px;
+}
+#record i{
+    color: white;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+#record h3
+{
+    vertical-align: top;
+    margin-left: 3px;
+    margin-top: 6.5px;
+    color: white;
+    font-size: 1rem;
+    /* margin-right: 7px; */
+}
+/* presenting message */
+#present-message{
+    vertical-align: top;
+    margin-left: 0px;
+    border-radius: 8px;
+    width: 80%;
+    height: 6vh;
+    background-color: #3c4043;
+    color: white;
+    padding:2px;
+}
+#name-icon
+{
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 8px;
+    font-family:"Google Sans";
+    width: 23px;
+    height: 23px;
+}
+.name-circled
+{
+    
+    background-color: #202124;
+    text-align: center;
+    border-radius: 50%;
+    text-transform: capitalize;
+}
+.name-circled h2{
+    vertical-align: middle;
+    line-height: 1.5rem;
+}
+#present-message h3
+{
+    font-size: 1rem;
+    margin-left: 12px;
+    vertical-align: top;
+    vertical-align: middle;
+    line-height: 2rem;
+}
+/* flex-box section */
+#flex-box
+{
+    position: absolute;
+    margin-top: 7%;
+    margin-left: -8px;
+    width: 99%;
+    height: 60vh;
+    /* background-color: #bfdbf1c0; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 20px 0 20px 0;
+    overflow-y: hidden;
+}
+#box1, #box2, #box3, #box4, #box5, #box6, #box7
+{
+    border-radius: 8px;
+    min-width: 150px;
+    max-width: 280px;
+    min-height: 150px;
+    max-height: 280px;
+    height: 170px;
+    width: 170px;
+    margin: 5px;
+    background-color: #3c4043;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+} 
+#box2 .name-in-circle
+{
+    background-color: rgb(18, 74, 74);
+}
+#box3 .name-in-circle
+{
+    background-color: rgb(15, 79, 5);
+}
+#box4 .name-in-circle
+{
+    background-color: rgb(222, 68, 68);
+}
+#box5 .name-in-circle
+{
+    background-color: rgb(179, 92, 21);
+}
+#box6 .name-in-circle
+{
+    background-color: rgb(190, 46, 166);
+}
+#box7 .name-in-circle
+{
+    background-color: rgb(129, 133, 13);
+}
+.mic-icon, .name-in-circle, .name-in-bottom
+{
+    position: absolute;
+    margin: 0;
+    border-radius: 50%;
+    color: white;
+}
+.mic-icon{
+    top: 3px;
+    right: 3px;
+    height: 24px;
+    width: 24px;
+    text-align: center; 
+    background-color: #2b2f32ea;
+}
+.mic-icon i{
+    font-size: 0.7rem;
+}
+.name-in-circle
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    background-color: #2b2f32ea;
+}
+.name-in-circle p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.name-in-bottom
+{
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.8rem;
+    text-align: left;
+}
+/* aside section */
+aside{
+    height: 85vh;
+    background-color: white;
+    width: 30%;
+    vertical-align: top;
+    margin-left: -10px;
+    border-radius: 8px;
+    position: relative;
+}
+aside h2{
+    /* position: absolute; */
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 50%;
+    color:#20211d;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+aside #cross
+{
+    /* position: absolute; */
+    margin-top: 5%;
+    width: 10%;
+    font-size: 1.5rem;
+    color:#5f6368;
+    float: right;
+    vertical-align: top;
+}
+aside #message-record{
+    /* position: absolute; */
+    margin: 10% 10px 10px 10px;
+    font-size: 0.8rem;
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Roboto,Arial,sans-serif;
+    background-color: #f1f3f4;
+    color: #5f6063e7;
+}
+aside #message-send
+{
+    position: absolute;
+    border-radius: 20px;
+    bottom: 12px;
+    left: 10px;
+    right: 10px;
+    font-family: "Roboto",arial,sans-serif;
+    background-color: #e2e4e9;
+}
+aside #message-send p{
+    width: 83%;
+    color: #5b5f64cf;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 8px 8px 8px 18px ;
+    line-height: 1.3rem;
+}
+aside #message-send div
+{
+    vertical-align: top;
+    padding: 2px;
+    margin-top: 12px;
+    margin-left: -4px;
+}
+aside #message-send div i{
+    
+    color: #5b5f64cf;
+    font-size: 1.4rem;
+    font-weight: 500px;
+}
+/* footer */
+#footer-flex{
+    margin-left:0;
+    position: sticky; 
+    margin-top: 8px; 
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#left, #middle, #right
+{
+    width: 33%;
+    margin-right: 2%;
+}
+#right
+{
+    margin-right: 0;
+    text-align: right;
+}
+#left p
+{
+    color: white;
+    vertical-align: middle;
+    line-height: 8vh;
+    margin-left: 8px;
+}
+#left p.vertical-line
+{
+    color: #3c4043;
+    font-weight: 900;
+    margin: -4px 0px 0 12px;
+}
+#middle div{
+    color: white;
+    display: inline-block;
+    width: 40px;
+    margin: 3px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    background-color: #3c4043;
+}
+#middle .mic,#middle .video
+{
+    background-color: rgba(237, 55, 5, 0.916);
+}
+#middle div:hover
+{
+    background-color: rgba(237, 55, 5, 0.916);
+}
+#middle div.phone i{
+    transform: rotate(135deg);
+}
+#middle div.phone{
+    width: 60px;
+    border-radius: 20px;
+    background-color: rgba(237, 55, 5, 0.916);
+    
+}
+#right div
+{
+    display: inline-block;
+    margin: 15px 15px 5px 5px;
+    text-align: right;
+}
+#right div{
+    font-size: 1.3rem;
+    color: white;
+}
+#right .message
+{
+    color: rgba(19, 170, 235, 0.938);
+}
